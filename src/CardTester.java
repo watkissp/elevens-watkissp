@@ -17,6 +17,7 @@ public class CardTester {
         System.out.println("My card has the suit: " + x.suit());
         System.out.println("My card has the value: " + x.pointValue());
         System.out.println(x); // test the toString method
+        System.out.println("This should be true; " + x.matches(x));
         
         /**** CARD 2 ****/
         System.out.println("\n CARD 2 TESTS");
@@ -34,7 +35,7 @@ public class CardTester {
         System.out.println("My card has the suit: " + z.suit());
         System.out.println("My card has the value: " + z.pointValue());
         System.out.println(z); // test the toString method
-        System.out.println("This should be true: " + x.matches(z));
+        System.out.println("This should be false: " + x.matches(z));
         
-    }
-}
+    } // closes main
+} // closes class
