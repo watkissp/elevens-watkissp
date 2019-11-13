@@ -41,7 +41,6 @@ public class Deck {
         }
         
         // initialize the size variable
-        this.size = cards.size();
         shuffle();
         
         
@@ -72,6 +71,7 @@ public class Deck {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
         
         // Same as shuffler selection shuffle but for ArrayList
+        this.size = cards.size();
         
         for(int k = cards.size() - 1; k > 0; k--){
             int pos = (int)(Math.random() * (k+1));
